@@ -1,0 +1,80 @@
+        /* Custom Navbar Styles */
+        .custom-navbar {
+            background: linear-gradient(135deg, #990011, #FCF6F5);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            border-bottom: 2px solid #FCF6F5;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+            padding: 10px 0;
+        }
+
+        .custom-navbar:hover {
+            background: linear-gradient(135deg, #FCF6F5, #990011);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Custom Navigation Links */
+        .custom-nav-link {
+            position: relative;
+            color: #FCF6F5;
+            font-size: 22px;
+            font-weight: 500;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .custom-nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 3px;
+            background: #990011;
+            transition: width 0.3s ease;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+
+        .custom-nav-link:hover {
+            color: #990011;
+            transform: translateY(-2px);
+        }
+
+        .custom-nav-link:hover::after {
+            width: 100%;
+        }
+
+        /* Search Form Styles */
+        .search-form {
+            width: 60%;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .search-form input {
+            border-radius: 30px;
+            border: 1px solid #990011;
+            padding: 10px 20px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .search-form input:focus {
+            border-color: #FCF6F5;
+            box-shadow: 0 0 12px rgba(252, 246, 245, 0.6);
+            transform: scale(1.03);
+        }
+
+        .search-form button {
+            border-radius: 30px;
+            background-color: #FCF6F5;
+            border: none;
+            color: #990011;
+            padding: 10px 20px;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .search-form button:hover {
+            background-color: #990011;
+            color: #FCF6F5;
+            transform: scale(1.05);
+        }
