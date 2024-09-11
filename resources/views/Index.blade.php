@@ -2,7 +2,7 @@
 @section('title', 'Products.com')
 @section('index')
 <div class="container mx-auto mt-10 px-4">
-    <h1 class="text-5xl font-bold text-center mb-6 animate__animated animate__fadeIn animate__delay-1s" style="color: #990011;">Latest Products</h1>
+    <h1 class="text-5xl font-bold text-center mb-14 animate__animated animate__fadeIn animate__delay-1s" style="color: #990011;">Latest Products</h1>
 
     <div x-data="{ open: null }" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Card 1 -->
