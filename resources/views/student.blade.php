@@ -2,12 +2,67 @@
 @section('title', 'Form.com')
 @section('form')
 
+<style>
+    /* Form Styling */
+    .form-container {
+        background: #d0e7f5; /* Darker blue-gray background for the form */
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        max-width: 800px;
+        margin: 20px auto;
+        border: 1px solid #b0d4ee;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    /* Hover Effects for Form Container */
+    .form-container:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        border-color: #99c5e8;
+    }
+
+    /* Header Styling */
+    h1 {
+        font-size: 2.2rem;
+        text-align: center;
+        color: #990011;
+        margin-bottom: 20px;
+        animation: slideIn 1s;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        font-weight: bold;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateX(-30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+</style>
+
 <div class="container mx-auto mt-10 px-4">
     <h1 class="text-5xl font-bold text-center mb-10 animate__animated animate__fadeIn animate__delay-1s"
-        style="color: #990011;">Student Form</h1>
+        >Student Form</h1>
 
-    <form action="/xyz" method="post"
-        class="p-6 bg-white shadow-lg rounded-lg max-w-3xl mx-auto border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+    <!-- Form Container with Darker Background Color -->
+    <form action="/xyz" method="post" class="form-container">
         @csrf
 
         <!-- Grid for input fields -->
