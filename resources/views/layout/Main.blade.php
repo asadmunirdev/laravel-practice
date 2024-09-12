@@ -24,6 +24,7 @@
         @yield('welcome')
         @yield('index')
         @yield('form')
+        @yield('contact') 
     </main>
 
     <x-footer />

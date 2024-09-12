@@ -15,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','NewController@index');
 Route::get('/index','NewController@home');
+Route::get('/contact','NewController@contact');
 Route::get('/std','StudentController@std');
 Route::post('/xyz','StudentController@store');

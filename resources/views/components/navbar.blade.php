@@ -23,7 +23,7 @@
       <a class="custom-nav-link" href="{{'/'}}">Home</a>
       <a class="custom-nav-link" href="{{'/index'}}">Products</a>
       <a class="custom-nav-link" href="{{'/std'}}">Form</a>
-      <a class="custom-nav-link" href="#contact">Contact</a>
+      <a class="custom-nav-link" href="{{'/contact'}}">Contact</a>
     </div>
   </div>
   
@@ -33,7 +33,7 @@
       <li><a class="custom-nav-link" href="{{'/'}}">Home</a></li>
       <li><a class="custom-nav-link" href="{{'/index'}}">Products</a></li>
       <li><a class="custom-nav-link" href="{{'/std'}}">Form</a></li>
-      <li><a class="custom-nav-link" href="#contact">Contact</a></li>
+      <li><a class="custom-nav-link" href="{{'/contact'}}">Contact</a></li>
     </ul>
   </div>
   
