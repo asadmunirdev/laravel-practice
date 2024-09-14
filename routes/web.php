@@ -13,12 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','NewController@index');
-Route::get('/index','NewController@home');
-Route::get('/contact','NewController@contact');
-Route::get('/std','StudentController@std');
-Route::post('/xyz','StudentController@store');
-Route::get('get_data','StudentController@get_data');
-Route::get('/delete/{id}','StudentController@delete');
-Route::get('/edit/{id}','StudentController@edit');
-Route::post('/update/{id}','StudentController@update');
+Route::get('/', 'NewController@index');
+Route::get('/index', 'NewController@home');
+Route::get('/contact', 'NewController@contact');
+// Student Routing
+Route::get('/std', 'StudentController@std');
+Route::post('/xyz', 'StudentController@store');
+Route::get('get_data', 'StudentController@get_data');
+Route::get('/delete/{id}', 'StudentController@delete');
+Route::get('/edit/{id}', 'StudentController@edit');
+Route::post('/update/{id}', 'StudentController@update');
+// Teacher Routing
+Route::get('/tch','TeacherController@tch');
+Route::get('get_tch_data', 'TeacherController@get_tch_data');
+Route::post('/abc', 'TeacherController@store');
+Route::get('get_tch_data', 'TeacherController@get_data');
+Route::get('/delete/{id}', 'TeacherController@delete');
+Route::get('/edit/{id}', 'TeacherController@edit');
+Route::post('/update/{id}', 'TeacherController@update');
+

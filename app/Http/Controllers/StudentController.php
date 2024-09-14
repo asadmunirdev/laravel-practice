@@ -10,7 +10,7 @@ class StudentController extends Controller
     // Method to display the student form view
     public function std()
     {
-        return view("student");
+        return view("student.student_form");
     }
 
     // Method to store the student data from the form to the database
@@ -25,7 +25,7 @@ class StudentController extends Controller
     public function get_data()
     {
         $data = StudentModel::all();  // Retrieve all student data from the database
-        return view("student_data", compact('data'));  // Pass the data to the 'student_data' view
+        return view("student.student_data", compact('data'));  // Pass the data to the 'student_data' view
     }
 
     // Method to delete a student record by ID
@@ -39,7 +39,7 @@ class StudentController extends Controller
     public function edit($id)
     {
         $data = StudentModel::find($id);  // Find the student by ID
-        return view('edit_student_form', compact('data'));  // Pass the data to the 'edit_student_form' view
+        return view('student.edit_student_form', compact('data'));  // Pass the data to the 'edit_student_form' view
     }
 
     // Method to update a specific student record by ID

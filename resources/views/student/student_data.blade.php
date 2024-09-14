@@ -1,7 +1,7 @@
 @extends('layout.Main')
-@section('title', 'View Page')
+@section('title', 'Student View Page')
 
-@section('view')
+@section('std_view')
 <div class="overflow-x-auto">
 <h1 class="text-5xl font-bold text-center mb-10 animate__animated animate__fadeIn animate__delay-1s"
         >Student Data</h1>

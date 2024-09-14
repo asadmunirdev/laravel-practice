@@ -1,6 +1,6 @@
 @extends('layout.Main')
-@section('title', 'Form.com')
-@section('form')
+@section('title', 'Student Form')
+@section('std_form')
 
 
 <div class="container mx-auto mt-10 px-4">
@@ -64,7 +64,7 @@
                 Address</label>
             <textarea
                 class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 text-sm transition-transform duration-300 ease-in-out transform hover:scale-105"
-                id="studentAddress" rows="4" placeholder="Enter Student Address" name="address"></textarea>
+                id="studentAddress" rows="2" placeholder="Enter Student Address" name="address"></textarea>
         </div>
 
         <!-- Submit Button -->

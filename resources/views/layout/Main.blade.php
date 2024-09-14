@@ -23,9 +23,12 @@
     <main class="container mx-auto mt-6 px-4">
         @yield('welcome')
         @yield('index')
-        @yield('form')
-        @yield('view')
+        @yield('std_form')
+        @yield('tch_form')
+        @yield('std_view')
+        @yield('tch_view')
         @yield('update')
+        @yield('tch_update')
         @yield('contact') 
     </main>
 
