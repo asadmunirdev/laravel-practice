@@ -3,14 +3,6 @@
     <!-- Logo -->
     <a class="text-white text-2xl font-semibold" href="#">Asad-Web</a>
     
-    <!-- Search Form (Center) -->
-    <div class="flex-1 flex justify-center hidden md:flex">
-      <form class="flex items-center space-x-2 w-full max-w-2xl"> <!-- Slightly narrower width -->
-        <input class="form-control border rounded-full px-4 py-2 w-full" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success px-4 py-2 rounded-full" type="submit">Search</button>
-      </form>
-    </div>
-    
     <!-- Mobile Menu Button -->
     <button class="block md:hidden text-FCF6F5 focus:outline-none" id="menu-toggle">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -23,6 +15,7 @@
       <a class="custom-nav-link" href="{{'/'}}">Home</a>
       <a class="custom-nav-link" href="{{'/index'}}">Products</a>
       <a class="custom-nav-link" href="{{'/std'}}">Form</a>
+      <a class="custom-nav-link" href="{{'/get_data'}}">View Data</a>
       <a class="custom-nav-link" href="{{'/contact'}}">Contact</a>
     </div>
   </div>
@@ -33,16 +26,9 @@
       <li><a class="custom-nav-link" href="{{'/'}}">Home</a></li>
       <li><a class="custom-nav-link" href="{{'/index'}}">Products</a></li>
       <li><a class="custom-nav-link" href="{{'/std'}}">Form</a></li>
+      <li><a class="custom-nav-link" href="{{'/get_data'}}">View Data</a></li>
       <li><a class="custom-nav-link" href="{{'/contact'}}">Contact</a></li>
     </ul>
-  </div>
-  
-  <!-- Mobile Search Form (Hidden by default) -->
-  <div class="md:hidden hidden w-full bg-white shadow-md" id="mobile-search">
-    <form class="flex items-center space-x-2 w-full px-4 py-2">
-      <input class="form-control border rounded-full px-4 py-2 w-full" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success px-4 py-2 rounded-full" type="submit">Search</button>
-    </form>
   </div>
 </nav>
 
@@ -70,15 +56,10 @@
   }
 </style>
 
-<!-- Add JavaScript to toggle mobile menu and search visibility -->
+<!-- Add JavaScript to toggle mobile menu visibility -->
 <script>
   document.getElementById('menu-toggle').addEventListener('click', function() {
     const mobileMenu = document.getElementById('mobile-menu');
     mobileMenu.classList.toggle('hidden');
-  });
-
-  document.getElementById('search-toggle').addEventListener('click', function() {
-    const mobileSearch = document.getElementById('mobile-search');
-    mobileSearch.classList.toggle('hidden');
   });
 </script>

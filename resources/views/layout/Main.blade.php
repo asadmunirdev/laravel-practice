@@ -24,6 +24,8 @@
         @yield('welcome')
         @yield('index')
         @yield('form')
+        @yield('view')
+        @yield('update')
         @yield('contact') 
     </main>
 
