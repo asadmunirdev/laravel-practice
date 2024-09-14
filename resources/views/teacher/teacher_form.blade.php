@@ -1,5 +1,5 @@
 @extends('layout.Main')
-@section('title', 'Teacher View Page')
+@section('title', 'Teacher Form Page')
 @section('tch_form')
 
 <div class="container mx-auto mt-10 px-4">

@@ -1,5 +1,5 @@
 @extends('layout.Main')
-@section('title', 'Student Form')
+@section('title', 'Student Form Page')
 @section('std_form')
 
 

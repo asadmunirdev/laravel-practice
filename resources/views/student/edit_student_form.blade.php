@@ -1,5 +1,5 @@
 @extends('layout.Main')
-@section('title', 'Update Page')
+@section('title', 'Student Update Page')
 
 @section('update')
 

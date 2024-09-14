@@ -1,5 +1,5 @@
 @extends('layout.Main')
-@section('title', 'Teacher Data')
+@section('title', 'Teacher View Page')
 @section('tch_view')
 
 <div class="overflow-x-auto">
