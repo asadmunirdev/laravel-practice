@@ -28,7 +28,7 @@ Route::get('/tch','TeacherController@tch');
 Route::get('get_tch_data', 'TeacherController@get_tch_data');
 Route::post('/abc', 'TeacherController@store');
 Route::get('get_tch_data', 'TeacherController@get_data');
-Route::get('/delete/{id}', 'TeacherController@delete');
-Route::get('/edit/{id}', 'TeacherController@edit');
-Route::post('/update/{id}', 'TeacherController@update');
+Route::get('/delete_tch/{id}', 'TeacherController@delete');
+Route::get('/edit_tch/{id}', 'TeacherController@edit');
+Route::post('/update_tch/{id}', 'TeacherController@update');
 

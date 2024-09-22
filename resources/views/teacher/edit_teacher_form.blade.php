@@ -7,7 +7,7 @@
     <h1 class="text-5xl font-bold text-center mb-10 animate__animated animate__fadeIn animate__delay-1s">Update Teacher Form</h1>
 
     <!-- Form Container with Green Background Color -->
-    <form action="/update/{{$t_data->id}}" method="POST" class="form-container">
+    <form action="/update_tch/{{$t_data->id}}" method="POST" class="form-container" enctype="multipart/form-data">
         @csrf
 
         <!-- Grid for input fields -->
@@ -72,6 +72,15 @@
                     class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 placeholder-gray-400 text-sm transition-transform duration-300 ease-in-out transform hover:scale-105"
                     id="department" name="department" value="{{$t_data->department}}" placeholder="Enter Teacher Department">
             </div>
+        </div>
+
+        <!-- Image Upload Section -->
+        <div class="mb-6">
+            <label for="image"
+                class="block text-gray-800 font-bold text-base mb-2 transition-colors duration-300 ease-in-out hover:text-green-600">Teacher Image</label>
+            <input type="file"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 text-sm transition-transform duration-300 ease-in-out transform hover:scale-105"
+                id="image" name="image">
         </div>
 
         <!-- Submit Button -->

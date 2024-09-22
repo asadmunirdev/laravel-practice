@@ -7,10 +7,11 @@
         >Teacher Form</h1>
 
     <!-- Form Container with Green Background Color -->
-    <form action="/abc" method="post" class="form-container">
+    <form action="/abc" method="post" class="form-container" enctype="multipart/form-data">
         @csrf
 
         <!-- Grid for input fields -->
+        
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <!-- Teacher Name -->
             <div>
@@ -64,6 +65,16 @@
             <input type="text"
                 class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 placeholder-gray-400 text-sm transition-transform duration-300 ease-in-out transform hover:scale-105"
                 id="teacherDepartment" placeholder="Enter Teacher Department" name="department">
+        </div>
+
+        <!-- Teacher Image -->
+        <div class="mb-6">
+            <label for="teacherImage"
+                class="block text-gray-800 font-bold text-base mb-2 transition-colors duration-300 ease-in-out hover:text-green-600">Upload
+                Image</label>
+            <input type="file"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 text-sm transition-transform duration-300 ease-in-out transform hover:scale-105"
+                id="teacherImage" name="image">
         </div>
 
         <!-- Submit Button -->
